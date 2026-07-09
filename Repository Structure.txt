@@ -1,0 +1,29 @@
+asterisk-pbx-from-scratch
+│
+├── README.md
+│
+├── docs/
+│   ├── Architecture.md
+│   ├── Call-Flow.md
+│   ├── Carrier-Integration.md
+│   ├── Engineering-Decisions.md
+│   ├── Lessons-Learned.md
+│   ├── Learning-Goals.md
+│   ├── Repository-Structure.md
+│   └── Project-Progress.md
+│
+├── configs/
+│   ├── pjsip.conf
+│   ├── extensions.conf
+│   └── rtp.conf
+│
+├── traces/
+│   ├── cli-call-SIP-traces.txt
+│   └── telnyx-call-flow.png
+│
+├── diagrams/
+│   ├── architecture.drawio
+│   ├── architecture.png
+│   └── call-flow.png
+│
+└── images/
