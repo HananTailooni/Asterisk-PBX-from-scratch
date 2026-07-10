@@ -61,8 +61,11 @@ This was an important lesson in how PJSIP registrar processing differs from norm
 
 ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
-3- Applying a PJSIP ACL to an IP-identified trunk endpoint prevented local SIP endpoints from registering. Because the global endpoint identifier order was ip,username,anonymous, incoming REGISTER requests appeared to be evaluated against the ACL during endpoint identification. Removing the ACL restored normal registration. Azure NSG rules were used instead to restrict inbound SIP traffic from the carrier.
+3- Applying a PJSIP ACL to an IP-identified trunk endpoint prevented local SIP endpoints from registering. 
+Because the global endpoint identifier order was ip,username,anonymous, incoming REGISTER requests appeared to be evaluated against the ACL during endpoint identification. 
+Removing the ACL restored normal registration. Azure NSG rules were used instead to restrict inbound SIP traffic from the carrier.
 
+🎯Workaround:
 Applied NSG rules in Azure vm nsg instead of ACLs in Asterisk PBX.
 
 
